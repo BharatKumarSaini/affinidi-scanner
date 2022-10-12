@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { NativeModules, View } from 'react-native'
+import { NativeModules, StyleSheet, View } from 'react-native'
 
 //import Scanner from './components/scanner'
 import App from './App'
@@ -7,9 +7,23 @@ import App from './App'
 //import HomeStack from './routes/homeStack'
 export const Counter = () => {
   return (
-    <View>
+    <View style={styles.AppContainer}>
       <App />
     </View>
   )
 }
-export default NativeModules.RNModuleTemplateModule
+
+const styles = StyleSheet.create({
+  AppContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#000',
+
+    flexDirection: 'column-reverse',
+
+    // justifyContent: 'center',
+    alignContent: 'center',
+  },
+})
+export default NativeModules.RNAffinidiModule

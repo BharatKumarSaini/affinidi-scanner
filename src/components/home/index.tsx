@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { Button, View } from 'react-native'
+import { Button, StyleSheet, View } from 'react-native'
 import RBSheet from 'react-native-raw-bottom-sheet'
 import CameraScanner from '../../Camera'
 import PhoneSignIn from '../phone/auth/index'
@@ -38,7 +38,7 @@ const Home = () => {
           </RBSheet>
         </View>
       ) : (
-        <View style={{ flex: 1 }}>
+        <View style={styles.container}>
           <CameraScanner
             apiKey='SQSKUdOMO6BcbK1I090571wsfl0JMjWPd971AIMidtIJqWkJmL13l8umXzEjQmoP'
             url='https://asli-documents-service.dev.in.affinidi.io/api/v1/documents/extract-document'
@@ -50,5 +50,19 @@ const Home = () => {
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column-reverse',
+    backgroundColor: '#000',
+    // justifyContent: 'center',
+    width: '100%',
+    alignContent: 'center',
+    // position: 'relative',
+
+    //paddingVertical: 50,
+  },
+})
 
 export default Home
