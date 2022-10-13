@@ -5,9 +5,6 @@ import CameraScanner from '../../Camera'
 import PhoneSignIn from '../phone/auth/index'
 //import Scanner from '../scanner'
 const Home = () => {
-  console.log(
-    'enterd home----------------------------------------------------------------------------------------'
-  )
   const [flag, setFlag] = useState(true)
   const [data, setData] = useState(null)
   console.log(data)
