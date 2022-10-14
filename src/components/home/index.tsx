@@ -3,7 +3,6 @@ import { Button, StyleSheet, View } from 'react-native'
 import RBSheet from 'react-native-raw-bottom-sheet'
 import CameraScanner from '../../Camera'
 import PhoneSignIn from '../phone/auth/index'
-//import Scanner from '../scanner'
 const Home = () => {
   const [flag, setFlag] = useState(true)
   const [data, setData] = useState(null)
@@ -51,11 +50,12 @@ const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column-reverse',
+    flexDirection: 'row',
     backgroundColor: '#000',
     // justifyContent: 'center',
-    width: '100%',
     alignContent: 'center',
+    // alignItems: 'stretch',
+    width: '100%',
     // position: 'relative',
 
     //paddingVertical: 50,
