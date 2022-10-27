@@ -4,6 +4,8 @@ import RBSheet from 'react-native-raw-bottom-sheet'
 import CameraScanner from '../../Camera'
 import PhoneSignIn from '../phone/auth/index'
 const Home = () => {
+  console.log("Entred Home --------------------------");
+  
   const [flag, setFlag] = useState(true)
   const [data, setData] = useState(null)
   console.log(data)
