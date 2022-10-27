@@ -6,7 +6,7 @@ import { Camera, useCameraDevices } from 'react-native-vision-camera'
 
 // export const addOne = (input: number) => input + 1
 
-interface IScannerProps {
+export interface IScannerProps {
   apiKey: string
   url: string
   documentType: 'ADHAR' | 'PANCR'

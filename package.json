@@ -1,6 +1,6 @@
 {
   "name": "affinidi-scanner",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "homepage": "https://github.com/BharatKumarSaini/affinidi-scanner",
   "main": "lib/index.js",

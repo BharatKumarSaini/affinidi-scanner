@@ -3,9 +3,15 @@ import { Button, StyleSheet, View } from 'react-native'
 import RBSheet from 'react-native-raw-bottom-sheet'
 import CameraScanner from '../../Camera'
 import PhoneSignIn from '../phone/auth/index'
-const Home = () => {
-  console.log("Entred Home --------------------------");
-  
+import { IScannerProps } from '../../Camera'
+
+interface Ihome {
+  data: IScannerProps
+}
+
+const Home = (props: Ihome) => {
+  console.log('Entred Home --------------------------')
+
   const [flag, setFlag] = useState(true)
   const [data, setData] = useState(null)
   console.log(data)

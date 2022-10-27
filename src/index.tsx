@@ -5,10 +5,12 @@ import { NativeModules, StyleSheet, View } from 'react-native'
 import Home from './components/home'
 //import Home from './components/home'
 //import HomeStack from './routes/homeStack'
-export const Counter = () => {
+
+import { IScannerProps } from './Camera'
+export const Scanner = (props: IScannerProps) => {
   return (
     <View style={styles.AppContainer}>
-      <Home />
+      <Home data={props} />
     </View>
   )
 }
@@ -18,7 +20,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ffff',
+    backgroundColor: '#000',
 
     flexDirection: 'column-reverse',
 
